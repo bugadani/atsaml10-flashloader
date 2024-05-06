@@ -12,6 +12,7 @@ fn generate(target: &Variant) -> ChipFamily {
         "-p",
         "atsaml10-flashloader",
         "--release",
+        "--no-default-features",
         "--features",
         &target_lower,
         "--target",

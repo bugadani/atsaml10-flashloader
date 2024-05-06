@@ -16,7 +16,7 @@ test = false
 bench = false
 
 [features]
-default = []
+default = ["atsaml10x14"] # for rust-analyzer
 atsaml10x14 = []
 atsaml10x15 = []
 atsaml10x16 = []

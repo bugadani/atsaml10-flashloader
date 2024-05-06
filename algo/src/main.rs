@@ -6,13 +6,13 @@ use flash_algorithm::*;
 use crate::pac::nvmctrl::regs::Intflag;
 mod pac;
 
-//#[cfg(any(features = "atsaml10x14", features = "atsaml11x14"))]
+#[cfg(any(feature = "atsaml10x14", feature = "atsaml11x14"))]
 const FLASH_SIZE: u32 = 0x4000;
 
-#[cfg(any(features = "atsaml10x15", features = "atsaml11x15"))]
+#[cfg(any(feature = "atsaml10x15", feature = "atsaml11x15"))]
 const FLASH_SIZE: u32 = 0x8000;
 
-#[cfg(any(features = "atsaml10x16", features = "atsaml11x16"))]
+#[cfg(any(feature = "atsaml10x16", feature = "atsaml11x16"))]
 const FLASH_SIZE: u32 = 0x10000;
 
 struct Algorithm;
