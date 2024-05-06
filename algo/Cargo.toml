@@ -1,0 +1,25 @@
+[package]
+authors = ["Dániel Buga <bugadani@gmail.com>"]
+edition = "2021"
+readme = "README.md"
+name = "atsaml10-flashloader"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = "0.7.0"
+flash-algorithm = { version = "0.4.0" }
+
+# this lets you use `cargo fix`!
+[[bin]]
+name = "atsaml10-flashloader"
+test = false
+bench = false
+
+[features]
+default = []
+atsaml10x14 = []
+atsaml10x15 = []
+atsaml10x16 = []
+atsaml11x14 = []
+atsaml11x15 = []
+atsaml11x16 = []
